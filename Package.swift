@@ -21,7 +21,8 @@ let package = Package(
         ),
         .target(
             name: "PaymentsSDK",
-            dependencies: ["AlCore", "Payments"]
+            dependencies: ["AlCore", "Payments"],
+            path: "PaymentsSDK"
         )
     ]
 )
