@@ -8,7 +8,7 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "PaymentsSDK", targets: ["PaymentsSDK"])
+        .library(name: "Payments", targets: ["Payments"])
     ],
     targets: [
         .binaryTarget(
