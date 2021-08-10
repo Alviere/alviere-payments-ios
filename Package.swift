@@ -15,9 +15,13 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "Payments",
+            name: "PaymentsLibrary",
             url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.0/Payments.xcframework.zip",
             checksum: "d12c5cbf12d5e3b108503efa26e7e49d4a14a3b17c63530135bed879b2390a04"
+        ),
+        .target(
+            name: "Payments",
+            dependencies: ["AlCore", "PaymentsLibrary"]
         )
     ]
 )
