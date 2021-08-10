@@ -21,7 +21,8 @@ let package = Package(
         ),
         .target(
             name: "Payments",
-            dependencies: ["AlCore", "PaymentsLibrary"]
+            dependencies: ["AlCore", "PaymentsLibrary"],
+            path: "Payments"
         )
     ]
 )
