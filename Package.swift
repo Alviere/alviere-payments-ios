@@ -8,13 +8,16 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "Payments", targets: ["Payments"])
+        .library(name: "Payments", targets: ["Payments", "AlCore"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/Alviere/alviere-core-ios.git", from: "0.9.3")
     ],
     targets: [
         .binaryTarget(
             name: "Payments",
-            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.2/Payments.xcframework.zip",
-            checksum: "4e81664212d2fbc743cd1c61d8890cb7e54443c2df0bbfa1b4fb9c5c7374c6cc"
+            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.3/Payments.xcframework.zip",
+            checksum: "8e39368d79da0b9ba3827102d76b7b40e009fdd38bd42ac5cdf97aa7fa748e21"
         )
     ]
 )
