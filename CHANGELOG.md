@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.9] - 2022-02-23
+### Added
+- Added closure, combine and async/await integration options.
+### Changed
+- Transaction types review.
+- *Breaking Changes*
+    - `OperationServiceFee` was moved to AlCore and renamed to `ServiceFeeRequest`.
+    - `OperationServiceFeeTypeCalcType` was moved to AlCore and renamed to `CalcType`.
+    - `OperationServiceFeeType` was moved to AlCore and renamed to `ServiceFeeType`.
+    - `OperationServiceFeeValue` was moved to AlCore, renamed to `ServiceFeeValue` and refactored to an enum. `OperationServiceFeeValue(amount:percent:)` was refactored to `ServiceFeeValue.amount(_:)` and `ServiceFeeValue.percent(_:)`.
+    - `BankAccountDetailsRequest` was moved to AlCore and refactored to an enum. `BankAccountDetailsRequest(ach:eft:swift:iban:clabe:)` was refactored to `BankAccountDetailsRequest.ach(routingNumber:accountNumber:)`, `BankAccountDetailsRequest.eft(transitNumber:institutionCode:accountNumber:)`, `BankAccountDetailsRequest.swift(bicCode:accountNumber:)`, `BankAccountDetailsRequest.iban(ibanNumber: String)` and `BankAccountDetailsRequest.clabe(bicCode:clabeNumber:)`.
+    - `BankAccountDetails` was moved to AlCore.
+
 ## [0.9.7] - 2022-01-26
 ### Changed
 - Updated AlCore dependency.

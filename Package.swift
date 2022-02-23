@@ -18,7 +18,7 @@ let package = Package(
         .package(
             name: "AlCore",
             url: "https://github.com/Alviere/alviere-core-ios.git",
-            .exact("0.9.7")
+            .exact("0.9.9")
         )
     ],
     targets: [
@@ -32,8 +32,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Payments",
-            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.7/Payments.xcframework.zip",
-            checksum: "52b1b8550918eb4b3bb8b07665aa9eb90575cdd15492751acf79b1f773462b50"
+            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.9/Payments.xcframework.zip",
+            checksum: "c24c602d733df25b82a9c0dd552ddc7c7f873d8a4dc40eb602c20bae53c38d37"
         )
     ]
 )
