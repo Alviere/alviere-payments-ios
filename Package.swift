@@ -1,15 +1,15 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.10
 import PackageDescription
 
 let package = Package(
-    name: "Payments",
+    name: "PaymentsSDK",
     defaultLocalization: "en",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "Payments",
+            name: "PaymentsSDK",
             type: .static,
             targets: ["PaymentsSDKDeps"]
         )
@@ -18,28 +18,28 @@ let package = Package(
         .package(
             name: "AlCore",
             url: "https://github.com/Alviere/alviere-core-ios.git",
-            .exact("0.9.25")
+            .exact("0.9.26")
         ),
         .package(
             name: "AlCamera",
             url: "https://github.com/Alviere/alviere-camera-ios.git",
-            .exact("1.1.0")
+            .exact("1.2.0")
         )
     ],
     targets: [
         .target(
             name: "PaymentsSDKDeps",
             dependencies: [
-                "Payments",
+                "PaymentsSDK",
                 "AlCore",
                 "AlCamera"
             ],
             path: "PaymentsSDKDeps"
         ),
         .binaryTarget(
-            name: "Payments",
-            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.25/Payments.xcframework.zip",
-            checksum: "6237d711f45bb30f924556dd73a79ac4679d50cbb6361ead8aab13ef69554bed"
+            name: "PaymentsSDK",
+            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.26/PaymentsSDK.xcframework.zip",
+            checksum: "490721b6c41053452845e30fc4a71b2a80431671b2b3be212d30e2d8928f29ce"
         )
     ]
 )
