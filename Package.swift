@@ -1,4 +1,4 @@
-// swift-tools-version:5.10
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
@@ -18,7 +18,7 @@ let package = Package(
         .package(
             name: "AlCore",
             url: "https://github.com/Alviere/alviere-core-ios.git",
-            .exact("0.9.27")
+            .exact("0.9.28")
         ),
         .package(
             name: "AlCamera",
@@ -38,8 +38,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PaymentsSDK",
-            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.27/PaymentsSDK.xcframework.zip",
-            checksum: "d3a1064c16e19b68b0a6703319b6e9fe44adc32725510ae2b2f8c491a9eb5d5c"
+            url: "https://github.com/Alviere/alviere-payments-ios/releases/download/0.9.28/PaymentsSDK.xcframework.zip",
+            checksum: "8b6fed6e5c50ec117d0b30b4695db1cf6067a599d59e0c82bd12f3fe5b80a10f"
         )
     ]
 )
