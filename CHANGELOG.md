@@ -5,6 +5,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.9.29] 2025-07-XX
+
+### Added
+- Added more 3DS preferences to payment method model.
+- Added transactions list method query parameters to allow payment method and issued card filtering.
+- Added support for cash loading barcode generation and store locations listing.
+
+### Changed
+- Improve support for cash loading details on transactions and receipt details.
+
+
 ## [0.9.28] 2025-05-XX
 
 ### Added
