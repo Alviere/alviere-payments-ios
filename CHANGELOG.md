@@ -5,7 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [0.9.29] 2025-07-XX
+## [0.9.30] 2026-01-13
+
+### Changed
+- Alcore integration update.
+
+
+## [0.9.29] 2025-08-25
 
 ### Added
 - Added more 3DS preferences to payment method model.
@@ -16,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improve support for cash loading details on transactions and receipt details.
 
 
-## [0.9.28] 2025-05-XX
+## [0.9.28] 2025-05-19
 
 ### Added
 - Added method to update payment method 3DS preferences.
