@@ -5,6 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [0.9.32] 2026-07-22
+
+### Added
+- Added wire account details on transaction and wallets.
+- Added primary flag on payment methods.
+- Added metadata field on update card payment method.
+- Added update bank account method.
+- Add get transactions limits method.
+
+### Changed
+- Updated license to Apache 2.0.
+- Alcore integration update.
+
+### Deprecated
+- CocoaPods is being deprecated following the announced sunset of the Trunk. We will continue publishing releases while it remains available and reliable, but cannot guarantee support long term. Carthage will be supported only for the same period. We recommend migrating to **Swift Package Manager (SPM)**, our primary distribution method going forward, so we can focus our efforts on a single distribution channel.
+
+
 ## [0.9.30] 2026-01-13
 
 ### Changed
